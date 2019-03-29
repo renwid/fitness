@@ -68,7 +68,8 @@ if(isset($_POST['register'])){
     }
 
 }
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -104,7 +105,7 @@ if(isset($_POST['register'])){
               <div class="text-center">
                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
               </div>
-              <form class="user" action="register1.php" method="post">
+              <form class="user" action="register.php" method="post">
 
 
                   <div class="col-sm-6 mb-3 mb-sm-11">
