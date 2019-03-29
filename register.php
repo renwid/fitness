@@ -116,8 +116,6 @@ if(isset($_POST['register'])){
                     <input name="password" type="password" class="form-control form-control-user" id="password" placeholder="Password">
                   </div>
 
-
-
                   <button type="submit" name="register" value="Register" class="btn btn-primary btn-user btn-block">Register</button>
 
 
