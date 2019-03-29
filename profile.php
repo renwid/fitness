@@ -1,4 +1,11 @@
 <?php
+session_start();
+
+if(!isset($_SESSION['user_id'])){
+      header('Location: login.php');
+      exit;
+}else{
+
 
     $user_id = filter_input(INPUT_POST, 'user_id', FILTER_VALIDATE_INT);
     $name = filter_input(INPUT_POST, 'name');
@@ -17,11 +24,12 @@
 
         //Add user information
         $query = 'INSERT INTO user
-                  (userName, userAge, userWeight, userHeight, userGoalID)
+                  (userID, userName, userAge, userWeight, userHeight, userGoalID)
                   values
-                  (:name, :age, :weight, :height, :goal_id)';
+                  (:userID ,:name, :age, :weight, :height, :goal_id)';
 
         $statement = $db->prepare($query);
+        $statement->bindValue(':userID', $_SESSION['user_id']);
         $statement->bindValue(':name', $name);
         $statement->bindValue(':age', $age);
         $statement->bindValue(':weight', $weight);
@@ -32,5 +40,6 @@
 
         // Display the Product List page
         include('index.php');
-}
+      }
+    }
 ?>
