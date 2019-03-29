@@ -6,10 +6,11 @@
     $weight = filter_input(INPUT_POST, 'weight', FILTER_VALIDATE_FLOAT);
     $height = filter_input(INPUT_POST, 'height', FILTER_VALIDATE_FLOAT);
     $goal_id = filter_input(INPUT_POST, 'goal_id', FILTER_VALIDATE_INT);
+    if(isset($POST['playe']))
+
 
     //Validate INPUT_POST
-    if ($goal_id == null || $goal_id == false ||
-            $name == null || $age == null || $weight == null || $height == null) {
+    if ($user_id == null || $name == null || $age == null || $weight == null || $height == null || $goal_id == null || $goal_id == false) {
         $error = "Invalid user data. Check all fields and try again.";
         //include('../Error/error.php');
     } else {
@@ -17,11 +18,13 @@
 
         //Add user information
         $query = 'INSERT INTO user
-                  (userName, userAge, userWeight, userHeight, userGoalID)
+                  (userID, userName, userAge, userWeight, userHeight, userGoalID)
                   values
-                  (:name, :age, :weight, :height, :goal_id)';
+                  (:user_id, :name, :age, :weight, :height, :goal_id)';
+
 
         $statement = $db->prepare($query);
+        $statement->bindValue(':user_id', $user_id);
         $statement->bindValue(':name', $name);
         $statement->bindValue(':age', $age);
         $statement->bindValue(':weight', $weight);

@@ -3,6 +3,7 @@ require('Model/database.php');
 $query = 'SELECT *
           FROM goal
           ORDER BY userGoalID';
+
 $statement = $db->prepare($query);
 $statement->execute();
 $categories = $statement->fetchAll();
@@ -28,12 +29,15 @@ $statement->closeCursor();
 
             <label>Goal:</label>
             <select name="goal_id">
-            <?php foreach ($categories as $goal) : ?>
-                <option value="<?php echo $goal['userGoalID']; ?>">
-                    <?php echo $goal['userGoalType']; ?>
+            <?php foreach ($categories as $goal_id) : ?>
+                <option value="<?php echo $goal_id['userGoalID']; ?>">
+                    <?php echo $goal_id['userGoalType']; ?>
                 </option>
             <?php endforeach; ?>
             </select><br>
+
+            <label id="label1">ID:</label>
+            <input type="text" name="user_id"><br>
 
             <label id="label1">Name:</label>
             <input type="text" name="name"><br>
