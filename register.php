@@ -68,7 +68,8 @@ if(isset($_POST['register'])){
     }
 
 }
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
