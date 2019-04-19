@@ -65,6 +65,8 @@ if(isset($_POST['register'])){
     if($result){
         //What you do here is up to you!
         echo 'Thank you for registering with our website.';
+        header('Location: form.php');
+
     }
 
 }
@@ -107,7 +109,7 @@ elseif(isset($_POST['login'])){
             $_SESSION['logged_in'] = time();
 
             //Redirect to our protected page, which we called home.php
-            header('Location: add_profile.php');
+            header('Location: form.php');
             exit;
 
         } else{
@@ -123,7 +125,7 @@ elseif(isset($_POST['login'])){
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   </head>
@@ -132,17 +134,17 @@ elseif(isset($_POST['login'])){
 
   <!-- Sign Up -->
 	<div class="form-container sign-up-container">
-		<form action="test.php" class="user" method="post">
+		<form action="login.php" class="user" method="post">
 			<h1>Create Account</h1>
 			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-f"></i></a>
 				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>
-			<span>or use your email for registration</span>
+			<span>or use a new username for registration</span>
 			<input type="text" name="username" id="username" placeholder="Username" />
 			<input type="password" name="password" id="password" placeholder="Password" />
-			<button type="submit" name="register" value="Register">Sign Up</button>
+			<button id="registerButton" type="submit" name="register" value="Register">Sign Up</button>
 		</form>
 	</div>
 
@@ -150,7 +152,7 @@ elseif(isset($_POST['login'])){
 
   <!-- Sign In -->
 	<div class="form-container sign-in-container">
-		<form class="user" action="test.php" method="post">
+		<form class="user" action="login.php" method="post">
 			<h1>Sign in</h1>
 			<div class="social-container">
 				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
