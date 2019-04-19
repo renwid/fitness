@@ -1,0 +1,189 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin-top: 13em;
+  background: black;
+}
+
+@-webkit-keyframes initial-loading {
+  0%, 100% {
+    -webkit-transform: translate(-34px, 0);
+            transform: translate(-34px, 0);
+  }
+  50% {
+    -webkit-transform: translate(96px, 0);
+            transform: translate(96px, 0);
+  }
+}
+
+@keyframes initial-loading {
+  0%, 100% {
+    -webkit-transform: translate(-34px, 0);
+            transform: translate(-34px, 0);
+  }
+  50% {
+    -webkit-transform: translate(96px, 0);
+            transform: translate(96px, 0);
+  }
+}
+.initial-load-animation {
+  padding-top: 96px;
+  width: 200px;
+  margin: 0 auto;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
+}
+.initial-load-animation .linkedin-image {
+  background-image: url("../img/logo3.png");
+  height: 48px;
+  width: 48px;
+  margin: 0 auto 32px;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
+  transition: all .5s ease-out;
+}
+.initial-load-animation .loading-bar {
+  width: 130px;
+  height: 2px;
+  /* margin: 0 auto; */
+  margin-top: -1em;
+  margin-left: 5em;
+
+  border-radius: 2px;
+  /* set background color to black */
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transform: rotate(135deg);
+
+  transition: -webkit-transform .3s ease-in;
+  transition: transform .3s ease-in;
+  transition: transform .3s ease-in, -webkit-transform .3s ease-in;
+}
+
+.initial-load-animation .loading-bar1 {
+  width: 130px;
+  height: 2px;
+  margin-top: -7.3em;
+  margin-left: 4em;
+  border-radius: 2px;
+
+  /* set background color to black */
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transform: rotate(135deg);
+  transform-origin: 20% 40%;
+  transition: -webkit-transform .3s ease-in;
+  transition: transform .3s ease-in;
+  transition: transform .3s ease-in, -webkit-transform .3s ease-in;
+}
+
+/* .initial-load-animation .loading-bar2 {
+  width: 130px;
+  height: 2px;
+  margin-top: -0.1em;
+  margin-left: 9em;
+  border-radius: 2px;
+
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transform: rotate(90deg);
+  transform-origin: 20% 40%;
+  transition: -webkit-transform .3s ease-in;
+  transition: transform .3s ease-in;
+  transition: transform .3s ease-in, -webkit-transform .3s ease-in;
+}
+
+.initial-load-animation .loading-bar3 {
+  width: 130px;
+  height: 2px;
+  margin-top: -1.8em;
+  margin-left: 2.2em;
+  border-radius: 2px;
+
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transform: rotate(0);
+  transform-origin: 20% 40%;
+  transition: -webkit-transform .3s ease-in;
+  transition: transform .3s ease-in;
+  transition: transform .3s ease-in, -webkit-transform .3s ease-in;
+} */
+
+.initial-load-animation .loading-bar .blue-bar {
+  height: 100%;
+  width: 68px;
+  position: absolute;
+  -webkit-transform: translate(-34px, 0);
+          transform: translate(-34px, 0);
+  background-color: #cfcfcf;
+  border-radius: 2px;
+  -webkit-animation: initial-loading 2s infinite ease;
+          animation: initial-loading 2s infinite ease;
+          /* -3 */
+  animation-delay: -3s;
+}
+.initial-load-animation .loading-bar1 .blue-bar {
+  height: 100%;
+  width: 68px;
+  position: absolute;
+  -webkit-transform: translate(-34px, 0);
+          transform: translate(-34px, 0);
+  background-color: #cfcfcf;
+  border-radius: 2px;
+  -webkit-animation: initial-loading 2s infinite ease;
+          animation: initial-loading 2s infinite ease;
+
+}
+/* .initial-load-animation .loading-bar2 .blue-bar {
+  height: 100%;
+  width: 68px;
+  position: absolute;
+  -webkit-transform: translate(-34px, 0);
+          transform: translate(-34px, 0);
+  background-color: red;
+  border-radius: 2px;
+  -webkit-animation: initial-loading 1.5s infinite ease;
+          animation: initial-loading 1.5s infinite ease;
+}
+.initial-load-animation .loading-bar3 .blue-bar {
+  height: 100%;
+  width: 68px;
+  position: absolute;
+  -webkit-transform: translate(-34px, 0);
+          transform: translate(-34px, 0);
+  background-color: red;
+  border-radius: 2px;
+  -webkit-animation: initial-loading 1.5s infinite ease;
+          animation: initial-loading 1.5s infinite ease;
+} */
+.initial-load-animation.fade-load .linkedin-image {
+  -webkit-transform: translate(0, 10px);
+          transform: translate(0, 10px);
+  opacity: 0;
+}
+.initial-load-animation.fade-load .loading-bar {
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+}
+
+.initial-load-animation.fade-load .loading-bar1 {
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+}
