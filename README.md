@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://i.imgur.com/dyHO0CM.png" alt="Logo" width="370" height="300">
+    <img src="https://i.imgur.com/aIfzI2y.png" alt="Logo" width="370" height="300">
   </a>
 
   <h3 align="center">Fitness Up</h3>
