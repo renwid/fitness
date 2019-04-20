@@ -14,13 +14,6 @@ $statement->closeCursor();
 <!-- the head section -->
 <head>
     <title>Fitness</title>
-    <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
-    <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
-
 </head>
 
 <!-- the body section -->
@@ -31,7 +24,7 @@ $statement->closeCursor();
     <main>
 
         <h1></h1>
-        <form action="profile.php" method="post"
+        <form action="profile_test.php" method="post"
               id="add_product_form">
 
             <label>Goal:</label>
@@ -54,6 +47,18 @@ $statement->closeCursor();
 
             <label id="label3">Height:</label>
             <input type="text" name="height"><br>
+
+            <label id="label3">First Name:</label>
+            <input type="text" name="first_name"><br>
+
+            <label id="label3">Last Name:</label>
+            <input type="text" name="last_name"><br>
+
+            <label id="label3">Email:</label>
+            <input type="text" name="email"><br>
+
+            <label id="label3">Phone:</label>
+            <input type="text" name="phone"><br>
 
             <label>&nbsp;</label>
             <input id="addProduct3" type="submit" value="Add User"><br>
