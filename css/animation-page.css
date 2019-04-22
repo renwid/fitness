@@ -126,3 +126,8 @@ footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
+.test a{
+  /* color: #5A6268; */
+  color: white;
+}
