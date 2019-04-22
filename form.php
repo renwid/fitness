@@ -16,16 +16,20 @@ $statement->closeCursor();
 
     <link rel="stylesheet" href="css/form.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="js/landing.js"></script>
+    <link href="css/animate.css" rel="stylesheet">
 
 
 </head>
 
 <body>
+  <!-- <canvas class='connecting-dots'></canvas> -->
+  <!-- <div class="fadeIn">
 
   <h1>Your Profile</h1>
-
+</div> -->
   <form method="post" action="profile_test.php">
-	    <h1>Customize your profile here</h1>
+	    <h1>Set up your profile</h1>
 
     <div class="contentform">
     	<div id="sendmessage"> Your profile has been saved. Thank you. </div>
@@ -159,6 +163,10 @@ $statement->closeCursor();
   <!-- Page level custom scripts -->
   <script src="js/demo/chart-area-demo.js"></script>
   <script src="js/demo/chart-pie-demo.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src="js/landing.js"></script>
+
 </body>
 
 </html>

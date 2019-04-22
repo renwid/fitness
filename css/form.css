@@ -1,7 +1,8 @@
 body {
   margin: auto;
-  background: #eaeaea;
+  background: #262626;
   font-family: 'Open Sans', sans-serif;
+  margin-top: 5em;
 }
 
 .info p {
@@ -18,13 +19,13 @@ body {
 }
 form h1 {
   font-size: 18px;
-  background: #F6AA93 none repeat scroll 0% 0%;
+  background: #737373 none repeat scroll 0% 0%;
   color: rgb(255, 255, 255);
   padding: 22px 25px;
   border-radius: 5px 5px 0px 0px;
   margin: auto;
   text-shadow: none;
-  text-align:left
+  text-align:center;
 }
 
 form {
@@ -49,8 +50,7 @@ p {
 
 h1 {
   text-align:center;
-  color: #666;
-  text-shadow: 1px 1px 0px #FFF;
+  color: white;
   margin:50px 0px 0px 0px
 }
 
@@ -87,7 +87,7 @@ textarea {
   width: 35px;
   float: left;
   border-radius: 5px 0px 0px 5px;
-  background:#eeeeee;
+  background:#737373;
   height:42px;
   position: relative;
   text-align: center;
@@ -96,7 +96,7 @@ textarea {
 
 
 i {
-  color:#555;
+  color:white;
 }
 
 .contentform {
@@ -104,7 +104,7 @@ i {
 }
 
 .bouton-contact{
-  background-color: #81BDA4;
+  background-color: #737373;
   color: #FFF;
   text-align: center;
   width: 100%;
@@ -169,7 +169,7 @@ i {
 
 .custom-dropdown select {
   background-color: #EEEE;
-  color: #81BDA4;
+  color: black;
   font-size: inherit;
   padding: 0.75em;
   padding-right: 2.5em;
@@ -253,12 +253,12 @@ i {
   transition: all 250ms ease;
 }
 .radio input[type="radio"]:checked + .radio-label:before {
-  background-color: #3197EE;
+  background-color: black;
   box-shadow: inset 0 0 0 4px #f4f4f4;
 }
 .radio input[type="radio"]:focus + .radio-label:before {
   outline: none;
-  border-color: #3197EE;
+  border-color: black;
 }
 .radio input[type="radio"]:disabled + .radio-label:before {
   box-shadow: inset 0 0 0 4px #f4f4f4;
@@ -311,3 +311,31 @@ i {
   margin-left: 16.1em;
   margin-top: -3.60em;
 }
+
+
+
+
+
+
+/* CANVAS BACKGROUND */
+/* For the User Home Page & Canvas Background Animation */
+
+/* body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 2em;
+  background-color: black;
+  animation: fadein 1s;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; } */

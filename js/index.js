@@ -27,3 +27,7 @@ $('.fa-user').on('click', function() {
 $('.fa-sign-out-alt').on('click', function() {
     window.location = 'https://www.google.com';
 });
+
+$('.signup').on('click', function() {
+    window.location = 'https://www.google.com';
+});

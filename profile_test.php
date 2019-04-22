@@ -54,7 +54,7 @@ if(!isset($_SESSION['user_id'])){
         $statement->closeCursor();
 
         // Display the Product List page
-        include('index.php');
+        include('load.html');
       }
     }
 ?>
