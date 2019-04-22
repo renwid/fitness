@@ -7,3 +7,23 @@
   });
 
 }).call(this);
+
+$('.fa-chart-line').on('click', function() {
+    window.location = 'https://www.google.com';
+});
+
+$('.fa-utensils').on('click', function() {
+    window.location = 'https://www.facebook.com';
+});
+
+$('.fa-newspaper').on('click', function() {
+    window.location = 'https://www.google.com';
+});
+
+$('.fa-user').on('click', function() {
+    window.location = 'https://www.google.com';
+});
+
+$('.fa-sign-out-alt').on('click', function() {
+    window.location = 'https://www.google.com';
+});
