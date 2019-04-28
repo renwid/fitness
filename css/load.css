@@ -49,7 +49,7 @@ body {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   opacity: 1;
-  transition: all .5s ease-out;
+  transition: all .2s ease-out;
 }
 .initial-load-animation .loading-bar {
   width: 130px;

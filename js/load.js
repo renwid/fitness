@@ -1,14 +1,15 @@
 setInterval(function(){
 
   setTimeout(function(){
-    $('.initial-load-animation').addClass('fade-load');
-  }, 3000);
+    $('.initial-load-animation')
+    .addClass('fade-load');
+  }, 4000);
 
 }, 500); //time
 
    setTimeout(function(){
       location.href = "landing.html";
-   },5000);
+   },500);
 
 //2000 & 5 - 4 sec
 //3000 & 5 - 5 sec
